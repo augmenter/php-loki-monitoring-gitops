@@ -26,7 +26,8 @@ spec:
             - name: loki-storage
               mountPath: /loki
             - name: loki-config
-              mountPath: /etc/loki
+              mountPath: /etc/loki/local-config.yaml  # full path inside container
+              subPath: local-config.yaml               # key in ConfigMap
           resources:
             limits:
               cpu: 500m
