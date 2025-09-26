@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: loki-config
   labels:
-    app: promtail
+    app: loki
 data:
   local-config.yml: |
     server:
